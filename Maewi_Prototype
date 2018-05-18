@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Flinders FlinSafe Landing Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div id="logo"><img src="flndrsym.png" alt="Flinders University"></a></div>
+		<div id = "tagline"></div>
+	</div> 
+
+
+	<div class="navbar">
+		<div class="invis-buttons">
+			<a href="landing_page.html">FlinSafe Home</a>
+			<a href="report.html">Report</a>
+			<a href="query.html">Query</a>
+			<a href="events.html">Recent Events</a>
+			<a href="#">Help</a>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Menu 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a class="dropdown-item" href="#">Flinsafe Home</a>
+				<a class="dropdown-item" href="#">Report</a>
+				<a class="dropdown-item" href="#">Query</a>
+				<a class="dropdown-item" href="#">Recent Events</a>
+				<a class="dropdown-item" href="#">Help</a>
+			</div>
+		</div>
+		<a href="login.html" class="right">Login/Register</a>
+	</div>
+
+	<div class="banner">
+		<section class="slideshow">
+			<div id="slideshowPicture">
+				<div id="slideshowInner">
+					<div id="innerLogin">
+						<h3>Flinders Flinsafe</h3>
+						<p>To see security events at Flinders, you will need to sign in via Okta. Please press the button below.</p>
+						<p><a href="login.html" class="btn">Sign In</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="row">
+		<div class="main">
+	  </div>
+	</div>
+
+	<div id="spacingContainer"></div>
+	
+	<div class="footer">
+		<div id="footer-text">
+			<h3>HELP AND SUPPORT</h3>
+			<p>For users exhibiting difficulties, please contact support</p>
+			<p>Website: <a href="#">Flinsafe Support</a></p>
+			<p>Email: <a href="mailto:help@flinsafe.com">help@flinsafe.com</a></p>
+			<p>Phone: 012-555-579</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
