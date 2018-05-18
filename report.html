@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-<title>Flinders FlinSafe Landing Page</title>
+<title>Flinders FlinSafe Report and Incident</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
@@ -38,32 +38,39 @@
 		<a href="login.html" class="right">Login/Register</a>
 	</div>
 
-	<div class="banner">
-		<section class="slideshow">
-			<div id="slideshowPicture">
-				<div id="slideshowInner">
-					<div id="innerLogin">
-						<h3>Flinders Flinsafe</h3>
-						<p>To see security events at Flinders, you will need to sign in via Okta. Please press the button below.</p>
-						<p><a href="login.html" class="btn">Sign In</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+	<div id="contentBox">
+		  <form action="file:///C:/Users/Maewi/Desktop/flinsafe/submission_successful.html">
+			<p>Do you require any assistance?</p>
+		    <input type="checkbox" name="0001" value="Police"> Police
+			<input type="checkbox" name="0002" value="Ambulance"> Ambulance
+			<input type="checkbox" name="0003" value="Fire"> Fire Department<br />
+			<br />
+			<label for="iname">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Your name.."> <br />
+			<br />
+			<label for="idate">Date of Incident:</label>
+			<input type="date" name="idate"><br />
+			<br />
+			<label for="time">Time of Incident:</label>
+			<input type="time" name="itime"><br />
+			<br />
+			<label for="itype">Type of Incident</label>
+			<select id="itype" name="itype">
+				<option value="fire">Fire</option>
+				<option value="theft">Theft</option>
+				<option value="assault">Assault</option>
+				<option value="injury">Accidental Injury</option>
+			</select><br />
 
-	<div class="row">
-		<div class="main">
-			<div id="contentBox">
-				<p class="text-center">Welcome to Flinsafe, your number one stop for security at Flinders University.</p>
-			</div>
-		</div>
-		<div class="side">
-		</div>
+			<p><label for="iname">Brief Description:</label></p>
+			<input type="text" id="desc" name="bdesc" placeholder="Small kitchen fire..."> <br />
+			<br />
+			<input type="submit" value="Submit">
+		  </form>
 	</div>
-
-	<div id="spacingContainer"></div>
 	
+	<div id="spacingContainer"></div>
+
 	<div class="footer">
 		<div id="footer-text">
 			<h3>HELP AND SUPPORT</h3>
