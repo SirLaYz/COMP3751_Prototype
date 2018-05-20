@@ -8,7 +8,7 @@ body {
 
 .container {
 	position: relative;
-	min-height: 1000px;
+	min-height: 877px;
 	height: 100%;
 }
 /*Style header bar*/
@@ -33,7 +33,7 @@ body {
 	float: right;
 	display: inline-block;
 	padding-top: 25px;
-	background-image: url("flinsafe.png");
+	background-image: url("assets/flinsafe.png");
 	width: 170px;
 	height: px;
 	background-size: contain;
@@ -137,7 +137,7 @@ body {
 }
 
 #slideshowPicture {
-	background-image: url("hub-banner.jpg");
+	background-image: url("assets/hub-banner.jpg");
 	width: 99.1vw;
 	height: 24.5vw;
 	min-height: 300px;
@@ -228,6 +228,32 @@ body {
 	margin-top: 15px;
 }
 
+.event {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+#event4 {
+	margin-top: 40px !important;
+}
+
+.eventpic {
+	height: 100px;
+	width: 180px;
+	margin-right: 10px;
+	display: inline-block;
+	
+}
+
+.eventtbl {
+	width: 75%;
+}
+
+.eventtbl tr {
+	width: 50%
+}
+
 .text-center {
 	text-align: center;
 }
@@ -262,6 +288,10 @@ body {
 #spacingContainer {
 	height: 200px;
 	margin: 30px;
+}
+
+#spacingContainer2 {
+	height:20px;
 }
 
 /* Footer Styling */
