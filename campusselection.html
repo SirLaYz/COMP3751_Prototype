@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+<title>Flinders FlinSafe Landing Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/validator/10.2.0/validator.js"/></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/validator/10.2.0/validator.min.js"/></script>
+</head>
+<body>
+
+	<div class="header">
+		<div id="logo"><img src="flndrsym.png" alt="Flinders University"></a></div>
+		<div id = "tagline"></div>
+	</div> 
+
+	<div class="container">
+	<div class="row">
+		
+		<div class="main">
+			<div id="contentBox">
+			<div class="col-sm-12">
+				<p class="text-center">Welcome to Flinsafe, your number one stop for security at Flinders University.</p>
+			</div>
+			<div class="col-sm-12">
+				<p class="text-center"><B>Select your campus</B></p>
+			</div>
+			
+	<!--Radio group-->
+	<form name="campus-selection" role="form">
+	<div class="form-check col-sm-12 text-center">
+		<input name="102" type="radio" class="with-gap" id="radio106">
+			<label for="radio106">Bedford Park</label>
+	</div>
+
+	<div class="form-check col-sm-12 text-center">
+		<input name="102" type="radio" class="with-gap" id="radio107" checked>
+			<label for="radio107">Tonsley</label>
+	</div>
+
+	<div class="form-check col-sm-12 text-center">
+		<input name="102" type="radio" class="with-gap" id="radio108">
+			<label for="radio108">CBD</label>
+	</div>
+<!--Radio group-->
+	<div class="wrapper">
+		<button type="submit" class="cs btn btn-primary" id="login" formaction="landing_page.html">Select</button>
+		<button type="cancel" class="cs btn btn-primary" id="login" formaction="#">Cancel</button>
+	</div>
+   </form>             
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+	<div class="footer col-sm-12">
+		<div id="footer-text">
+			<h3>HELP AND SUPPORT</h3>
+			<p>For users exhibiting difficulties, please contact support</p>
+			<p>Website: <a href="#">Flinsafe Support</a></p>
+			<p>Email: <a href="mailto:help@flinsafe.com">help@flinsafe.com</a></p>
+			<p>Phone: 012-555-579</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
