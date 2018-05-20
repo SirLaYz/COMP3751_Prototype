@@ -60,9 +60,9 @@ body {
 }
 
 .dropdown {
-	display: none;
+	display: block;
 	float: left;
-	overflow: hidden;
+	overflow: inherit;
 }
 
 .dropdown .dropbtn {
@@ -206,11 +206,11 @@ body {
 /* non-main page content styling */
 #contentBox {
 	width: 60vw;
-	min-height: 271px;
+	height:auto !important;
 	min-width: 210px;
 	border-radius: 1px!important;
     box-shadow: 6px 6px 2px #eee;
-    border: 1px solid #c1c1c1;
+    border: none;
 	margin: auto;
 	margin-top: 30px;
 	padding-left: 8px;
