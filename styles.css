@@ -158,6 +158,9 @@ body {
 	.navbar a.right {
 		margin-right: 5vw; !important;
 	}
+	.mapouter {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 350px) {
@@ -206,7 +209,7 @@ body {
 /* non-main page content styling */
 #contentBox {
 	width: 60vw;
-	min-height: 600px;
+	min-height: 487px;
 	min-width: 210px;
 	border-radius: 1px!important;
     box-shadow: 6px 6px 2px #eee;
@@ -246,6 +249,14 @@ body {
     flex: 70%; /* Set the width of the main content */
     background-color: white; /* White background color */
     padding: 20px; /* Some padding */
+}
+
+
+.mapouter {
+	position: relative;
+	float: right;
+	right: 20px;
+	top: 20px;
 }
 
 #spacingContainer {

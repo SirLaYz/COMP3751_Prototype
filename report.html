@@ -35,11 +35,13 @@
 				<a class="dropdown-item" href="#">Help</a>
 			</div>
 		</div>
+		<a href="login.html" class="right">Login/Register</a>
 	</div>
 
 	<div id="contentBox">
-		  <form action="file:///C:/Users/Maewi/Desktop/flinsafe/submission_successful.html">
-			<p>Do you require any assistance?</p>
+		<div class="mapouter"><div class="gmap_canvas"><iframe width="339" height="447" id="gmap_canvas" src="https://maps.google.com/maps?q=Flinders University Research University on Aboriginal Land&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net">crocothemes</a><style>.mapouter{overflow:hidden;height:447px;width:339px;}.gmap_canvas {background:none!important;height:447px;width:339px;}</style></div>
+		  <form action="submission_successful.html">
+			<p>Do you require any assistance? (tick all appropriate)</p>
 		    <input type="checkbox" name="0001" value="Police"> Police
 			<input type="checkbox" name="0002" value="Ambulance"> Ambulance
 			<input type="checkbox" name="0003" value="Fire"> Fire Department<br />
@@ -48,7 +50,7 @@
 			<input type="text" id="name" name="name" placeholder="Your name.."> <br />
 			<br />
 			<label for="idate">Date of Incident:</label>
-			<input type="date" name="idate"><br />
+			<input type="date" name="idate"	><br />
 			<br />
 			<label for="time">Time of Incident:</label>
 			<input type="time" name="itime"><br />
@@ -60,13 +62,17 @@
 				<option value="assault">Assault</option>
 				<option value="injury">Accidental Injury</option>
 			</select><br />
+			
+			<p><label for="location">Location:</label>
+			<input type="text" name="location" placeholder="Physics Building, South Ridge Precinct" size="35"></p>
 
 			<p><label for="iname">Brief Description:</label></p>
-			<input type="text" id="desc" name="bdesc" placeholder="Small kitchen fire..."> <br />
+			<input type="text" id="desc" name="bdesc" placeholder="Small kitchen fire..." size="45"> <br />
 			<br />
-			<a href="submission_successful.html">Submit</a>
+			<input type="submit" value="Submit">
 		  </form>
 	</div>
+	
 	
 	<div id="spacingContainer"></div>
 
