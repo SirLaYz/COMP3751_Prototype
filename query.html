@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,18 +12,41 @@
 </head>
 <body>
 
-	<div class="header">
-		<div id="logo"><img src="flndrsym.png" alt="Flinders University"></a></div>
-		<div id = "tagline"></div>
-	</div> 
-
 	<div class="container">
+		<div class="header">
+			<div id="logo"><img src="assets/flndrsym.png" alt="Flinders University"></a></div>
+			<div id = "tagline"></div>
+		</div> 
+
+
+	<div class="navbar">
+		<div class="invis-buttons">
+			<a href="landing_page.html">FlinSafe Home</a>
+			<a href="report.html">Report</a>
+			<a href="query.html">Query</a>
+			<a href="events.html">Recent Events</a>
+			<a href="help.html">Help</a>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Menu 
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a class="dropdown-item" href="landing_page.html">Flinsafe Home</a>
+				<a class="dropdown-item" href="report.html">Report</a>
+				<a class="dropdown-item" href="query.html">Query</a>
+				<a class="dropdown-item" href="events.html">Recent Events</a>
+				<a class="dropdown-item" href="help.html">Help</a>
+			</div>
+		</div>
+		<a href="login.html" class="right">Login/Register</a>
+	</div>
+	
 	<div class="row">
 		
 		<div class="main">
-			<div id="contentBox">
+			<div id="contentBox"><br>
 			<div class="col-sm-12">
-				<p class="text-center">Welcome to Flinsafe, your number one stop for security at Flinders University.</p>
 			</div>
 			<form data-toggle="validator" role="form">
 					<div class="form-group col-sm-6">
@@ -38,24 +60,28 @@
 							<input type="name" class="form-control" id="inputLN" placeholder="Last Name" required>
 								<div class="help-block with-errors"></div>
 					</div>
-					<div class="form-group col-sm-10">
+					
+					<div class="form-group col-sm-10"><br>
 						<label for="inputEmail" class="control-label">Email</label>
 							<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
 								<div class="help-block with-errors"></div>
 					</div>
 					
-					<div class="form-check col-sm-4 text-center">
+					<div class="form-check col-sm-4 text-center"><br>
 						<label for="inputgender" class="control-label">Gender</label>
+					</div>
+
+					<div class="form-check col-sm-4 text-center"><br>
 						<input name="102" type="radio" class="with-gap" id="radio106">
 							<label for="radio106">Male</label>
 					</div>
 
-					<div class="form-check col-sm-4 text-center">
+					<div class="form-check col-sm-4 text-center"><br>
 						<input name="102" type="radio" class="with-gap" id="radio107" checked>
 							<label for="radio107">Female</label>
 					</div>
 
-					<div class="form-check col-sm-4 text-center">
+					<div class="form-check col-sm-4 text-center"><br>
 						<input name="102" type="radio" class="with-gap" id="radio108">
 							<label for="radio108">Other</label>
 					</div>
@@ -67,11 +93,11 @@
 							<a class="dropdown-item" href="#">CBD</a>
 						</div>
 					</div>-->
-<div class="form-group col-sm-12">
+					<div class="form-group col-sm-12"><br>
 						<label for="query">Query:</label>
 						<textarea class="form-control" rows="5" id="query"></textarea>
 					</div>
-			<div class="wrapper col-sm-12">
+			<div class="wrapper col-sm-12"><br>
 				<button type="submit" class="btn btn-primary" id="login" formaction="landing_page.html" onSubmit="alert();">Submit Query</button>
 				<button type="cancel" class="btn btn-primary" id="login" formaction="#">Cancel</button>
 			</div>
@@ -81,7 +107,7 @@
 		</div>
 	</div>
 <div class="row">
-	<div class="footer col-sm-12">
+	<div class="footer">
 		<div id="footer-text">
 			<h3>HELP AND SUPPORT</h3>
 			<p>For users exhibiting difficulties, please contact support</p>
